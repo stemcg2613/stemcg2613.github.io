@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>stemcg2613 — Blue Bird Store</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1><span class="student">stemcg2613</span> — Blue Bird Store</h1>
+  </header>
+
+  <nav aria-label="Primary">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="home">
+    <section class="section-block" aria-labelledby="products-title" id="products">
+      <h2 id="products-title">Featured Products</h2>
+
+      <table>
+        <caption>Store Inventory</caption>
+
+        <!-- First & third columns lightly shaded -->
+        <colgroup>
+          <col class="shade" />
+          <col />
+          <col class="shade" />
+          <col />
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th scope="col">Product Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Category</th>
+            <th scope="col">Availability</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Eco Water Bottle</td>
+            <td>$14.99</td>
+            <td>Outdoors</td>
+            <td>In Stock</td>
+          </tr>
+          <tr>
+            <td>Wireless Mouse</td>
+            <td>$24.99</td>
+            <td>Electronics</td>
+            <td>Low Stock</td>
+          </tr>
+          <tr>
+            <td>Ceramic Planter</td>
+            <td>$12.00</td>
+            <td>Home</td>
+            <td>Backorder</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="4"><em>3 items listed</em></td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section class="section-block" id="contact">
+      <h2>Contact</h2>
+      <p>Email us at <a href="mailto:info@bluebirdstore.example">info@bluebirdstore.example</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Blue Bird Store</p>
+  </footer>
+
+  <script>
+   
+    document.getElementById('2025').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
