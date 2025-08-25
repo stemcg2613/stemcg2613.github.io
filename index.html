@@ -1,90 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="A simple personal webpage with About, Projects, and Contact sections.">
-    <meta name="keywords" content="HTML, Portfolio, Webpage">
-    <meta name="author" content="Steven McGraw">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="description" content="A simple personal webpage with About, Projects, and Contact sections." />
+  <meta name="keywords" content="HTML, Portfolio, Webpage" />
+  <meta name="author" content="Steven McGraw" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-        
-   <header>
-        <h1>
-        Welcome to My Portfolio
-        </h1>
-    
+
+  <header>
+    <h1>Welcome to My Portfolio</h1>
     <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am an aspiring web developer learning HTML and CSS to build modern web experiences.</p>
-        </section>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am an aspiring web developer learning HTML and CSS to build modern web experiences.</p>
+    </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Here are a few sample projects I’ve worked on.</p>
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Here are a few sample projects I’ve worked on.</p>
 
-            <table class="projects-table">
-              <caption>Sample Projects</caption>
+      <table class="projects-table">
+        <caption>Sample Projects</caption>
 
-              <colgroup>
-                <col class="accent">
-                <col>
-                <col class="accent">
-              </colgroup>
+        <colgroup>
+          <col class="accent" />
+          <col />
+          <col class="accent" />
+        </colgroup>
 
-              <thead>
-                <tr>
-                  <th>Project</th>
-                  <th>Description</th>
-                  <th>Image</th>
-                </tr>
-              </thead>
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Description</th>
+            <th>Image</th>
+          </tr>
+        </thead>
 
-              <tbody>
-                <tr>
-                  <td>Weather Dash</td>
-                  <td>A small dashboard that fetches city weather and displays a 5-day forecast.</td>
-                  <td><div class="img-ph" aria-label="image placeholder">Placeholder</div></td>
-                </tr>
-                <tr>
-                  <td>Task Tracker</td>
-                  <td>Simple application to create, complete, and filter daily tasks.</td>
-                  <td><div class="img-ph" aria-label="image placeholder">Placeholder</div></td>
-                </tr>
-              </tbody>
+        <tbody>
+          <tr>
+            <td>Weather Dash</td>
+            <td>A small dashboard that fetches city weather and displays a 5-day forecast.</td>
+            <td><div class="img-ph" aria-label="image placeholder">Placeholder</div></td>
+          </tr>
+          <tr>
+            <td>Task Tracker</td>
+            <td>Simple application to create, complete, and filter daily tasks.</td>
+            <td><div class="img-ph" aria-label="image placeholder">Placeholder</div></td>
+          </tr>
+        </tbody>
 
-              <tfoot>
-                <tr>
-                  <td colspan="3">Replace placeholders with real screenshots later.</td>
-                </tr>
-              </tfoot>
-            </table>
-        </section>
+        <tfoot>
+          <tr>
+            <td colspan="3">Replace placeholders with real screenshots later.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me via email or connect on LinkedIn!</p>
-        </section>
-    </main>
-  
-    <footer>
-        <p>&copy; 2025 Steven McGraw.</p>
-    </footer>
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <form class="contact-form" action="#" method="post" novalidate>
+        <div class="form-row two-col">
+          <div class="form-field">
+            <label for="name">Your Name <span aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" required placeholder="Jane Doe" />
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" required placeholder="jane@example.com" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="What’s this about?" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here…"></textarea>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <input class="btn-submit" type="submit" value="Send Message" />
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Steven McGraw.</p>
+  </footer>
 
 </body>
 </html>
-
-</body>
-</html>
-
