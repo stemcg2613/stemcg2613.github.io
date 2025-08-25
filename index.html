@@ -23,18 +23,19 @@
   </header>
 
   <main>
+    <!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
       <p>I am an aspiring web developer learning HTML and CSS to build modern web experiences.</p>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
       <h2>Projects</h2>
       <p>Here are a few sample projects I’ve worked on.</p>
 
       <table class="projects-table">
         <caption>Sample Projects</caption>
-
         <colgroup>
           <col class="accent" />
           <col />
@@ -53,53 +54,98 @@
           <tr>
             <td>Weather Dash</td>
             <td>A small dashboard that fetches city weather and displays a 5-day forecast.</td>
-            <td><div class="img-ph" aria-label="image placeholder">Placeholder</div></td>
+            <td>
+              <!-- Cartoon Sun (SVG) -->
+              <svg class="project-svg" viewBox="0 0 200 120" role="img" aria-label="Cartoon sun">
+                <defs>
+                  <linearGradient id="sunGrad" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#FFD54D"/>
+                    <stop offset="100%" stop-color="#FFB300"/>
+                  </linearGradient>
+                </defs>
+                <rect x="0" y="0" width="200" height="120" fill="#EAF6FF"/>
+                <g stroke="#FFC107" stroke-width="6" stroke-linecap="round">
+                  <line x1="100" y1="20"  x2="100" y2="4"/>
+                  <line x1="140" y1="30"  x2="153" y2="18"/>
+                  <line x1="160" y1="60"  x2="178" y2="60"/>
+                  <line x1="140" y1="90"  x2="153" y2="102"/>
+                  <line x1="100" y1="100" x2="100" y2="116"/>
+                  <line x1="60"  y1="90"  x2="47"  y2="102"/>
+                  <line x1="40"  y1="60"  x2="22"  y2="60"/>
+                  <line x1="60"  y1="30"  x2="47"  y2="18"/>
+                </g>
+                <circle cx="100" cy="60" r="28" fill="url(#sunGrad)" stroke="#FFA000" stroke-width="3"/>
+                <circle cx="90" cy="55" r="3" fill="#6B4F1D"/>
+                <circle cx="110" cy="55" r="3" fill="#6B4F1D"/>
+                <path d="M88 67 Q100 75 112 67" fill="none" stroke="#6B4F1D" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </td>
           </tr>
           <tr>
             <td>Task Tracker</td>
             <td>Simple application to create, complete, and filter daily tasks.</td>
-            <td><div class="img-ph" aria-label="image placeholder">Placeholder</div></td>
+            <td>
+              <!-- Cartoon Calendar (SVG) -->
+              <svg class="project-svg" viewBox="0 0 200 120" role="img" aria-label="Cartoon calendar">
+                <rect x="0" y="0" width="200" height="120" fill="#F7FBFF"/>
+                <rect x="28" y="22" width="144" height="86" rx="10" ry="10" fill="#FFFFFF" stroke="#B3D9FF" stroke-width="3"/>
+                <rect x="28" y="22" width="144" height="22" rx="10" ry="10" fill="#FF6B6B"/>
+                <circle cx="60"  cy="22" r="6" fill="#FFFFFF" stroke="#FF6B6B" stroke-width="3"/>
+                <circle cx="100" cy="22" r="6" fill="#FFFFFF" stroke="#FF6B6B" stroke-width="3"/>
+                <circle cx="140" cy="22" r="6" fill="#FFFFFF" stroke="#FF6B6B" stroke-width="3"/>
+                <g stroke="#DDEEFF" stroke-width="2">
+                  <line x1="28" y1="48"  x2="172" y2="48"/>
+                  <line x1="28" y1="70"  x2="172" y2="70"/>
+                  <line x1="28" y1="92"  x2="172" y2="92"/>
+                  <line x1="56" y1="48"  x2="56"  y2="108"/>
+                  <line x1="84" y1="48"  x2="84"  y2="108"/>
+                  <line x1="112" y1="48" x2="112" y2="108"/>
+                  <line x1="140" y1="48" x2="140" y2="108"/>
+                </g>
+                <g fill="none" stroke="#2ECC71" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M38 62 L46 70 L66 54"/>
+                  <path d="M94 84 L102 92 L122 76"/>
+                  <path d="M150 62 L158 70 L172 56"/>
+                </g>
+              </svg>
+            </td>
           </tr>
         </tbody>
 
         <tfoot>
           <tr>
-            <td colspan="3">Replace placeholders with real screenshots later.</td>
+            <td colspan="3">Replace these cartoons with real screenshots later if you’d like.</td>
           </tr>
         </tfoot>
       </table>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
       <h2>Contact</h2>
-
       <form class="contact-form" action="#" method="post" novalidate>
         <div class="form-row two-col">
           <div class="form-field">
             <label for="name">Your Name <span aria-hidden="true">*</span></label>
             <input id="name" name="name" type="text" required placeholder="Jane Doe" />
           </div>
-
           <div class="form-field">
             <label for="email">Email <span aria-hidden="true">*</span></label>
             <input id="email" name="email" type="email" required placeholder="jane@example.com" />
           </div>
         </div>
-
         <div class="form-row">
           <div class="form-field">
             <label for="subject">Subject</label>
             <input id="subject" name="subject" type="text" placeholder="What’s this about?" />
           </div>
         </div>
-
         <div class="form-row">
           <div class="form-field">
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" placeholder="Write your message here…"></textarea>
           </div>
         </div>
-
         <div class="form-row">
           <input class="btn-submit" type="submit" value="Send Message" />
         </div>
@@ -110,6 +156,5 @@
   <footer>
     <p>&copy; 2025 Steven McGraw.</p>
   </footer>
-
 </body>
 </html>
