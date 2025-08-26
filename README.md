@@ -1,6 +1,6 @@
-# Project Title
+# SDC260 Steven McGraw Course Project
 
-A brief description of your project, its purpose, and what it does.
+This project was created to learn and explore new talents acquired during my time in this course. Over the last 5 weeks I have learned about creating a github workspace, CSS3 styling, structural and visual enhancements, responsive design, and deployment/local hosting. Please look around and feel free to critique! 
 
 ## Table of Contents
 
@@ -15,22 +15,20 @@ A brief description of your project, its purpose, and what it does.
 
 ## Introduction
 
-Provide a more detailed explanation of your project. What problem does it solve? Why did you create it? 
+This project allowed me to work on my software development skills, while giving me the freedom to express my own personal style. I have created this portfolio in the hopes of filling the gaps with real world applications that I have created to share with the world. 
 
 ## Features
 
-List the main features of your project. What can users do with it? 
+Here are some of the main features of my portfolio... 
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Application browsing with a brief summary of what each project. 
+- "Contact me" feature to reach out with any questions or inquiries.
+- Summary of my overall goal and aspirations. 
 
 ## Technologies Used
 
 - HTML5
 - CSS3
-- JavaScript (if applicable)
-- Any frameworks (e.g., Bootstrap, React)
 
 
 ```bash
