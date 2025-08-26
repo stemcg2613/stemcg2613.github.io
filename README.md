@@ -28,6 +28,4 @@ Here are some of the main features of my portfolio...
 
 - HTML5 (63.4%)
 - CSS3 (36.6)
-
-
-```bash
+  
