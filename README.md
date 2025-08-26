@@ -7,7 +7,6 @@ This project was created to learn and explore new talents acquired during my tim
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -27,12 +26,8 @@ Here are some of the main features of my portfolio...
 
 ## Technologies Used
 
-- HTML5
-- CSS3
+- HTML5 (63.4%)
+- CSS3 (36.6)
 
 
 ```bash
-# Example commands
-git clone https://github.com/yourusername/yourproject.git
-cd yourproject
-open index.html
