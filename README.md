@@ -29,3 +29,4 @@ Here are some of the main features of my portfolio...
 - HTML5 (63.4%)
 - CSS3 (36.6)
   
+<img width="1914" height="1070" alt="image" src="https://github.com/user-attachments/assets/ed6b268b-a96c-4dd2-8dd3-5e60b4c1641b" />
